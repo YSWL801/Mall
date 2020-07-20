@@ -1,0 +1,195 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#eee;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-area {
+    width: 1170px;
+}
+
+.left-content {
+    background-color: #222;
+    min-height: 100vh;
+}
+
+.right-content {
+    margin-left: -30px;
+    margin-right: -15px;
+    padding-left: 30px;
+    padding-right: 15px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.header-content {
+    height: 50px;
+    background-color: #3c3c3c;
+    margin-left: -30px;
+    margin-right: -15px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.header-info {
+    height: 100%;
+    padding: 8px 0;
+}
+
+.body-content {
+}
+
+.logo {
+    display: block;
+    height: 80px;
+    width: 100%;
+    color: #ff6a00;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+    .logo:hover {
+        text-decoration: none;
+        color: #d9601a;
+    }
+
+.logo-content > p {
+    text-align: center;
+    color: #fff;
+}
+
+.menu-content {
+    padding: 35px 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    background-color: #222;
+    height: 45px;
+    border-top: 2px solid #3c3c3c;
+}
+
+    .menu-item:last-child {
+        border-bottom: 2px solid #3c3c3c;
+    }
+
+.menu-button {
+    display: block;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    color: #eff;
+}
+
+    .menu-button:hover {
+        text-decoration: none;
+        background-color: #3c3c3c;
+        color: #eef;
+    }
+
+.user-profile {
+    height: 34px;
+    position: relative;
+}
+
+    .user-profile > span.user-greetings {
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid #eff;
+        width: 150px;
+        color: #eff;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .user-profile > .profile-dropdown {
+        display: none;
+        position: absolute;
+        top: 34px;
+        left: 0;
+        width: 150px;
+        background-color: #3c3c3c;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .user-profile:hover > .profile-dropdown {
+        display: block;
+        cursor: pointer;
+    }
+
+.profile-dropdown-item {
+    height: 34px;
+    background-color: #222;
+}
+
+.profile-dropdown-btn {
+    display: block;
+    border-bottom: 2px solid #eff;
+    height: 32px;
+    background-color: #3c3c3c;
+    line-height: 32px;
+    text-align: center;
+    color: #eff;
+}
+
+    .profile-dropdown-btn:hover {
+        background-color: #eff;
+        text-decoration: none;
+        color: #000;
+    }
+
+.main-content {
+    padding-bottom: 50px;
+}
+
+.msg-box {
+    display: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 25px;
+    border-radius: 2px;
+    margin: 0 0 10px 0;
+}
+
+    .msg-box > p {
+        margin: 0;
+    }
+
+    .msg-box.succeed {
+        display: block;
+        background-color: limegreen;
+    }
+
+        .msg-box.succeed > p:before {
+            content: "成功√";
+            font-weight:600;
+        }
+
+
+    .msg-box.fault {
+        display: block;
+        background-color: lightcoral;
+    }
+        .msg-box.fault > p:before {
+            content: "错误×";
+            font-weight: 600;
+        }
